@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>튜터링 일정 캘린더</title>
+  <title>버디업 멘토링 일정 캘린더</title>
   <style>
     :root {
       --primary: #4f46e5;
@@ -395,8 +395,8 @@
 
 <body>
 
-  <h1>📚 튜터링 일정</h1>
-  <p class="subtitle">2026년 4월 1일 ~ 5월 말 &nbsp;|&nbsp; 주 2회 (수·금)</p>
+  <h1>📚 버디업 멘토링 일정</h1>
+  <p class="subtitle">2026년 3월 31일 ~ 5월 19일</p>
 
   <!-- 공지사항 영역 -->
   <div class="notice-area" id="notice-area"></div>
@@ -432,8 +432,8 @@
     const NOTICES = [
       {
         title: "공지",
-        text: "오리엔테이션 영상 필수 시청 (미시청시 장학금 지급 조건 미충족)",
-        date: ""   // 작성일 (선택, 비워도 됨)
+        text: "오리엔테이션 영상 시청, 자기이해활동 필수",
+        date: "~6/5까지"   // 작성일 (선택, 비워도 됨)
       }
     ];
 
@@ -446,190 +446,56 @@
     //
     //  날짜 형식: "YYYY-MM-DD"
     // ============================================================
-    const digi = "디지털공학";
-    const prgr = "C프로그래밍";
-    const loc = "Zoom(비대면)";
-    const time_digi = "18:00";
-    const time_prgr = "10:00";
     const SESSIONS = [
-      // ── Week 1 ──
       {
-        week: "Week 1 (수)",
-        date: "2026-04-01",
-        subject: digi,
-        content: "디지털과 아날로그의 차이, 디지털 회로, ADC/DAC의 이해",
-        place: loc,
-        time: time_digi,
-        memo: ""
+        date: "2026-03-31",
+        time: "13:00 ~ 15:00",
+        content: "1주차: 학교 도서관 이용 안내 및 도서관 스터디",
+        type: "어울림"
       },
       {
-        week: "Week 1 (금)",
-        date: "2026-04-03",
-        subject: prgr,
-        content: "C프로그래밍 개요 및 코드 작성의 이해",
-        place: loc,
-        time: time_prgr,
-        memo: ""
-      },
-      // ── Week 2 ──
-      {
-        week: "Week 2 (수)",
-        date: "2026-04-08",
-        subject: digi,
-        content: "진법 변환 및 보수의 이해, BCD코드, 3초과 코드, 2진 코드, 그레이코드, 에러 검출 코드의 이해 및 진법 변환 연습",
-        place: loc,
-        time: time_digi,
-        memo: ""
+        date: "2026-04-07",
+        time: "13:00 ~ 15:00",
+        content: "2주차: 전공 용어 정리 및 전공 교재 활용법 강의",
+        type: "학습"
       },
       {
-        week: "Week 2 (금)",
-        date: "2026-04-10",
-        subject: prgr,
-        content: "이스케이프 문자, 입출력 함수, 변수 및 상수, 산술 연산, 서식 지정자의 이해 및 실습",
-        place: loc,
-        time: time_prgr,
-        memo: ""
-      },
-      // ── Week 3 ──
-      {
-        week: "Week 3 (수)",
-        date: "2026-04-15",
-        subject: digi,
-        content: "시험 대비 요점 정리 및 질의응답",
-        place: loc,
-        time: time_digi,
-        memo: ""
+        date: "2026-04-14",
+        time: "13:00 ~ 15:00",
+        content: "3주차: 과제를 위한 리포트 작성법 강의",
+        type: "학습"
       },
       {
-        week: "Week 3 (금)",
-        date: "2026-04-17",
-        subject: prgr,
-        content: "시험 대비 요점 정리 및 질의응답",
-        place: loc,
-        time: time_prgr,
-        memo: ""
-      },
-      // ── Week 4 ── //중간고사 기간
-      {
-        week: "Week 4 (수)",
-        date: "2026-04-22",
-        subject: digi,
-        content: "중간고사(튜터링 미진행)",
-        place: loc,
-        time: time_digi,
-        memo: ""
+        date: "2026-04-21",
+        time: "13:00 ~ 15:00",
+        content: "4주차: 중간 고사를 위한 전공 과목 정리",
+        type: "학습"
       },
       {
-        week: "Week 4 (금)",
-        date: "2026-04-24",
-        subject: prgr,
-        content: "중간고사(튜터링 미진행)",
-        place: loc,
-        time: time_prgr,
-        memo: ""
-      },
-      // ── Week 5 ──
-      {
-        week: "Week 5 (수)",
-        date: "2026-04-29",
-        subject: digi,
-        content: "논리 게이트의 이해와 논리회로의 논리식 변환, 불 대수 법칙 연습",
-        place: loc,
-        time: time_digi,
-        memo: ""
+        date: "2026-05-05",
+        time: "13:00 ~ 15:00",
+        content: "5주차: 시험 후 환기를 위한 교내 식당 및 카페 등 안내",
+        type: "어울림"
       },
       {
-        week: "Week 5 (금)",
-        date: "2026-05-01",
-        subject: prgr,
-        content: "자료형 변수, 반복문, 조건문의 이해 및 while과 for의 차이, if-else와 switch-case의 차이 알아보기",
-        place: loc,
-        time: time_prgr,
-        memo: ""
-      },
-      // ── Week 6 ──
-      {
-        week: "Week 6 (수)",
-        date: "2026-05-06",
-        subject: digi,
-        content: "카르노 맵을 통한 간소화 연습, NAND와 NOR 게이트의 변환 이해",
-        place: loc,
-        time: time_digi,
-        memo: ""
+        date: "2026-05-12",
+        time: "13:00 ~ 15:00",
+        content: "6주차: 팀 프로젝트 팁 및 평가 고득점 전략 안내",
+        type: "학습"
       },
       {
-        week: "Week 6 (금)",
-        date: "2026-05-08",
-        subject: prgr,
-        content: "함수의 기능 및 사용이유, 1차원 배열 이해 및 실습",
-        place: loc,
-        time: time_prgr,
-        memo: ""
-      },
-      // ── Week 7 ──
-      {
-        week: "Week 7 (수)",
-        date: "2026-05-13",
-        subject: digi,
-        content: "가산기, 비교기, 디코더, 인코더의 구조 이해 및 논리식, 진리표 작성.",
-        place: loc,
-        time: time_digi,
-        memo: ""
-      },
-      {
-        week: "Week 7 (금)",
-        date: "2026-05-15",
-        subject: prgr,
-        content: "2차원 배열의 이해 및 예제 실습과 포인터 개념 알아보기",
-        place: loc,
-        time: time_prgr,
-        memo: ""
-      },
-      // ── Week 8 ──
-      {
-        week: "Week 8 (수)",
-        date: "2026-05-20",
-        subject: digi,
-        content: "멀티플렉서와 디멀티플렉서의 구조 이해 및 직접 구현해보기.",
-        place: loc,
-        time: time_digi,
-        memo: ""
-      },
-      {
-        week: "Week 8 (금)",
-        date: "2026-05-22",
-        subject: prgr,
-        content: "함수 포인터, 배열과 포인터 배열의 차이, Call by Reference/Value 의 차이 이해 및 예제 실습",
-        place: loc,
-        time: time_prgr,
-        memo: ""
-      },
-      // ── Week 9 ──
-      {
-        week: "Week 9 (수)",
-        date: "2026-05-27",
-        subject: digi,
-        content: "필요시 보강 예정",
-        place: loc,
-        time: time_digi,
-        memo: "결석한 튜티 대상으로 진행"
-      },
-      {
-        week: "Week 9 (금)",
-        date: "2026-05-29",
-        subject: prgr,
-        content: "필요시 보강 예정",
-        place: loc,
-        time: time_prgr,
-        memo: "결석한 튜티 대상으로 진행"
+        date: "2026-05-19",
+        time: "13:00 ~ 15:00",
+        content: "7주차: 지난 주차를 돌아보며 학습 점검 및 질답",
+        type: "학습"
       }
     ];
 
     // ============================================================
     //  캘린더 표시 범위 (필요시 수정)
     // ============================================================
-    const RANGE_START = "2026-04-01";
-    const RANGE_END = "2026-05-15";
+    const RANGE_START = "2026-03-31";
+    const RANGE_END = "2026-05-19";
 
     // ── 공지사항 렌더링 ──
     const noticeArea = document.getElementById('notice-area');
@@ -743,7 +609,7 @@
         // 탭 버튼
         const btn = document.createElement('button');
         btn.className = 'tab-btn' + (i === 0 ? ' active' : '');
-        btn.textContent = s.week;
+        btn.textContent = s.type || `활동 ${i + 1}`;
         btn.addEventListener('click', () => switchTab(i));
         tabsEl.appendChild(btn);
 
@@ -752,12 +618,11 @@
         detail.className = 'session-detail' + (i === 0 ? ' visible' : '');
         detail.id = `detail-${i}`;
         detail.innerHTML = `
-      <div class="modal-week-badge">${s.week}</div>
-      ${field('📖 과목', s.subject)}
-      ${field('📝 학습 내용', s.content)}
-      ${field('📍 장소', s.place)}
-      ${field('🕐 시간', s.time)}
-      ${field('💬 메모', s.memo)}
+      <div class="modal-week-badge">${s.type || '활동'}</div>
+      ${field('📅 날짜', s.date)}
+      ${field('🕐 활동 시간', s.time)}
+      ${field('📝 활동 내용', s.content)}
+      ${field('🏷️ 활동 구분', s.type)}
     `;
         detailsEl.appendChild(detail);
       });
@@ -790,6 +655,7 @@
     document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
 
     const container = document.getElementById('calendars');
+    container.appendChild(buildMonth(2026, 3));
     container.appendChild(buildMonth(2026, 4));
     container.appendChild(buildMonth(2026, 5));
   </script>
