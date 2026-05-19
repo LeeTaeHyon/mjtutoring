@@ -486,7 +486,13 @@
       {
         date: "2026-05-26",
         time: "13:00 ~ 15:00",
-        content: "7주차: 지난 주차를 돌아보며 학습 점검 및 질답",
+        content: "7주차: 현재 학습 상황 점검 및 향후 학습 계획 수립",
+        type: "학습"
+      },
+      {
+        date: "2026-06-02",
+        time: "13:00 ~ 15:00",
+        content: "8주차: 지난 주차를 돌아보며 학습 점검 및 질답",
         type: "학습"
       }
     ];
@@ -495,7 +501,7 @@
     //  캘린더 표시 범위 (필요시 수정)
     // ============================================================
     const RANGE_START = "2026-03-31";
-    const RANGE_END = "2026-05-19";
+    const RANGE_END = "2026-06-19";
 
     // ── 공지사항 렌더링 ──
     const noticeArea = document.getElementById('notice-area');
@@ -658,6 +664,7 @@
     container.appendChild(buildMonth(2026, 3));
     container.appendChild(buildMonth(2026, 4));
     container.appendChild(buildMonth(2026, 5));
+    container.appendChild(buildMonth(2026, 6));
   </script>
 </body>
 
