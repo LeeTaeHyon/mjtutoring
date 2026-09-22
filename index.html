@@ -396,7 +396,7 @@
 <body>
 
   <h1>📚 튜터링 일정</h1>
-  <p class="subtitle">2026년 4월 1일 ~ 5월 말 &nbsp;|&nbsp; 주 2회 (수·금)</p>
+  <p class="subtitle">2026년 9월 22일 ~ 11월 10일 &nbsp;|&nbsp; 총 7회 (화)</p>
 
   <!-- 공지사항 영역 -->
   <div class="notice-area" id="notice-area"></div>
@@ -446,190 +446,80 @@
     //
     //  날짜 형식: "YYYY-MM-DD"
     // ============================================================
-    const digi = "디지털공학";
-    const prgr = "C프로그래밍";
+    const subject = "임베디드 시스템";
     const loc = "Zoom(비대면)";
-    const time_digi = "18:00~21:00";
-    const time_prgr = "10:00~13:00";
+    const time = "";
     const SESSIONS = [
-      // ── Week 1 ──
       {
-        week: "Week 1 (수)",
-        date: "2026-04-01",
-        subject: digi,
-        content: "디지털과 아날로그의 차이, 디지털 회로, ADC/DAC의 이해",
+        week: "1회차",
+        date: "2026-09-22",
+        subject,
+        content: "ATmega128 구조 및 Microchip Studio 개발·시뮬레이션 환경 익히기",
         place: loc,
-        time: time_digi,
+        time,
         memo: ""
       },
       {
-        week: "Week 1 (금)",
-        date: "2026-04-03",
-        subject: prgr,
-        content: "C프로그래밍 개요 및 코드 작성의 이해",
+        week: "2회차",
+        date: "2026-09-29",
+        subject,
+        content: "I/O Port, LED·7-Segment 제어 코드 작성 및 I/O 레지스터 디버깅",
         place: loc,
-        time: time_prgr,
-        memo: ""
-      },
-      // ── Week 2 ──
-      {
-        week: "Week 2 (수)",
-        date: "2026-04-08",
-        subject: digi,
-        content: "진법 변환 및 보수의 이해, BCD코드, 3초과 코드, 2진 코드, 그레이코드, 에러 검출 코드의 이해 및 진법 변환 연습",
-        place: loc,
-        time: time_digi,
+        time,
         memo: ""
       },
       {
-        week: "Week 2 (금)",
-        date: "2026-04-10",
-        subject: prgr,
-        content: "이스케이프 문자, 입출력 함수, 변수 및 상수, 산술 연산, 서식 지정자의 이해 및 실습",
+        week: "3회차",
+        date: "2026-10-06",
+        subject,
+        content: "스위치·외부 인터럽트 원리 및 코드 시뮬레이션 / 시험 대비",
         place: loc,
-        time: time_prgr,
-        memo: ""
-      },
-      // ── Week 3 ──
-      {
-        week: "Week 3 (수)",
-        date: "2026-04-15",
-        subject: digi,
-        content: "시험 대비 요점 정리 및 질의응답",
-        place: loc,
-        time: time_digi,
+        time,
         memo: ""
       },
       {
-        week: "Week 3 (금)",
-        date: "2026-04-17",
-        subject: prgr,
-        content: "시험 대비 요점 정리 및 질의응답",
+        week: "4회차",
+        date: "2026-10-13",
+        subject,
+        content: "Timer/Counter0 동작 원리 및 오버플로 인터럽트 시뮬레이션",
         place: loc,
-        time: time_prgr,
-        memo: ""
-      },
-      // ── Week 4 ── //중간고사 기간
-      {
-        week: "Week 4 (수)",
-        date: "2026-04-22",
-        subject: digi,
-        content: "중간고사(튜터링 미진행)",
-        place: loc,
-        time: time_digi,
+        time,
         memo: ""
       },
       {
-        week: "Week 4 (금)",
-        date: "2026-04-24",
-        subject: prgr,
-        content: "중간고사(튜터링 미진행)",
+        week: "5회차",
+        date: "2026-10-27",
+        subject,
+        content: "Timer/Counter1·3 및 비교일치 인터럽트 코드 작성·디버깅",
         place: loc,
-        time: time_prgr,
-        memo: ""
-      },
-      // ── Week 5 ──
-      {
-        week: "Week 5 (수)",
-        date: "2026-04-29",
-        subject: digi,
-        content: "논리 게이트의 이해와 논리회로의 논리식 변환, 불 대수 법칙 연습",
-        place: loc,
-        time: time_digi,
+        time,
         memo: ""
       },
       {
-        week: "Week 5 (금)",
-        date: "2026-05-01",
-        subject: prgr,
-        content: "자료형 변수, 반복문, 조건문의 이해 및 while과 for의 차이, if-else와 switch-case의 차이 알아보기",
+        week: "6회차",
+        date: "2026-11-03",
+        subject,
+        content: "도트매트릭스, 스텝모터 제어 로직 분석 및 Project 코드 설계·종합 디버깅",
         place: loc,
-        time: time_prgr,
-        memo: ""
-      },
-      // ── Week 6 ──
-      {
-        week: "Week 6 (수)",
-        date: "2026-05-06",
-        subject: digi,
-        content: "카르노 맵을 통한 간소화 연습, NAND와 NOR 게이트의 변환 이해",
-        place: loc,
-        time: time_digi,
+        time,
         memo: ""
       },
       {
-        week: "Week 6 (금)",
-        date: "2026-05-08",
-        subject: prgr,
-        content: "함수의 기능 및 사용이유, 1차원 배열 이해 및 실습",
-        place: loc,
-        time: time_prgr,
-        memo: ""
-      },
-      // ── Week 7 ──
-      {
-        week: "Week 7 (수)",
-        date: "2026-05-13",
-        subject: digi,
-        content: "가산기, 비교기, 디코더, 인코더의 구조 이해 및 논리식, 진리표 작성.",
-        place: loc,
-        time: time_digi,
-        memo: ""
-      },
-      {
-        week: "Week 7 (금)",
-        date: "2026-05-15",
-        subject: prgr,
-        content: "2차원 배열의 이해 및 예제 실습과 포인터 개념 알아보기",
-        place: loc,
-        time: time_prgr,
-        memo: ""
-      },
-      // ── Week 8 ──
-      {
-        week: "Week 8 (수)",
-        date: "2026-05-20",
-        subject: digi,
-        content: "멀티플렉서와 디멀티플렉서의 구조 이해 및 직접 구현해보기.",
-        place: loc,
-        time: time_digi,
-        memo: ""
-      },
-      {
-        week: "Week 8 (금)",
-        date: "2026-05-22",
-        subject: prgr,
-        content: "함수 포인터, 배열과 포인터 배열의 차이, Call by Reference/Value 의 차이 이해 및 예제 실습",
-        place: loc,
-        time: time_prgr,
-        memo: ""
-      },
-      // ── Week 9 ──
-      {
-        week: "Week 9 (수)",
-        date: "2026-05-27",
-        subject: digi,
+        week: "7회차",
+        date: "2026-11-10",
+        subject,
         content: "필요시 보강 예정",
         place: loc,
-        time: time_digi,
-        memo: "결석한 튜티 대상으로 진행"
-      },
-      {
-        week: "Week 9 (금)",
-        date: "2026-05-29",
-        subject: prgr,
-        content: "필요시 보강 예정",
-        place: loc,
-        time: time_prgr,
-        memo: "결석한 튜티 대상으로 진행"
+        time,
+        memo: ""
       }
     ];
 
     // ============================================================
     //  캘린더 표시 범위 (필요시 수정)
     // ============================================================
-    const RANGE_START = "2026-04-01";
-    const RANGE_END = "2026-05-15";
+    const RANGE_START = "2026-09-22";
+    const RANGE_END = "2026-11-10";
 
     // ── 공지사항 렌더링 ──
     const noticeArea = document.getElementById('notice-area');
@@ -790,8 +680,9 @@
     document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
 
     const container = document.getElementById('calendars');
-    container.appendChild(buildMonth(2026, 4));
-    container.appendChild(buildMonth(2026, 5));
+    container.appendChild(buildMonth(2026, 9));
+    container.appendChild(buildMonth(2026, 10));
+    container.appendChild(buildMonth(2026, 11));
   </script>
 </body>
 
