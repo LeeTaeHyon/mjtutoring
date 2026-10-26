@@ -396,7 +396,7 @@
 <body>
 
   <h1>📚 버디업 멘토링 일정</h1>
-  <p class="subtitle">2026년 10월 7일 ~ 11월 25일</p>
+  <p class="subtitle">2026년 10월 7일 ~ 12월 2일</p>
 
   <!-- 공지사항 영역 -->
   <div class="notice-area" id="notice-area"></div>
@@ -448,40 +448,40 @@
         type: "학습"
       },
       {
-        date: "2026-10-14",
-        time: "12:00 ~ 14:00",
-        content: "2주차: 수업 필기·복습 방법 및 효율적인 시간 관리 방법 안내",
-        type: "학습"
-      },
-      {
         date: "2026-10-28",
         time: "12:00 ~ 14:00",
-        content: "3주차: 중간고사 대비 과목별 학습계획 수립 및 시험 공부 방법 점검",
-        type: "학습"
+        content: "2주차: 학교생활 적응을 위한 교내 시설 이용 및 카페 활동",
+        type: "어울림"
       },
       {
         date: "2026-11-04",
         time: "12:00 ~ 14:00",
-        content: "4주차: 중간고사 결과를 바탕으로 학습 방법 점검 및 부족한 부분 개선",
+        content: "3주차: 중간고사 결과를 바탕으로 학습 방법 점검 및 부족한 부분 개선",
         type: "학습"
       },
       {
         date: "2026-11-11",
         time: "12:00 ~ 14:00",
-        content: "5주차: 과제 일정 관리, 자료 조사 및 보고서 작성 방법 안내",
+        content: "4주차: 과제 일정 관리, 자료 조사 및 보고서 작성 방법 안내",
         type: "학습"
       },
       {
         date: "2026-11-18",
         time: "12:00 ~ 14:00",
-        content: "6주차: 학교생활 적응을 위한 교내 시설 이용 및 카페 활동",
+        content: "5주차: 학업·진로 고민 공유 및 향후 학습계획 정리",
         type: "어울림"
       },
       {
         date: "2026-11-25",
         time: "12:00 ~ 14:00",
-        content: "7주차: 학업·진로 고민 공유 및 향후 학습계획 정리",
-        type: "어울림"
+        content: "6주차: 수업 필기·복습 방법 재점검 및 과목별 취약 부분 보완",
+        type: "학습"
+      },
+      {
+        date: "2026-12-02",
+        time: "12:00 ~ 14:00",
+        content: "7주차: 기말고사 대비 과목별 학습계획 수립 및 우선순위 점검",
+        type: "학습"
       }
     ];
 
@@ -489,7 +489,7 @@
     //  캘린더 표시 범위 (필요시 수정)
     // ============================================================
     const RANGE_START = "2026-10-07";
-    const RANGE_END = "2026-11-25";
+    const RANGE_END = "2026-12-02";
 
     // ── 공지사항 렌더링 ──
     const noticeArea = document.getElementById('notice-area');
@@ -651,6 +651,7 @@
     const container = document.getElementById('calendars');
     container.appendChild(buildMonth(2026, 10));
     container.appendChild(buildMonth(2026, 11));
+    container.appendChild(buildMonth(2026, 12));
   </script>
 </body>
 
