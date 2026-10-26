@@ -396,7 +396,7 @@
 <body>
 
   <h1>📚 버디업 멘토링 일정</h1>
-  <p class="subtitle">2026년 10월 7일 ~ 12월 2일</p>
+  <p class="subtitle">2026년 10월 7일 ~ 11월 25일</p>
 
   <!-- 공지사항 영역 -->
   <div class="notice-area" id="notice-area"></div>
@@ -466,6 +466,12 @@
         type: "학습"
       },
       {
+        date: "2026-11-17",
+        time: "12:00 ~ 14:00",
+        content: "어울림 활동: 학교 주변 맛집·카페 탐방 및 학교생활 대화",
+        type: "어울림"
+      },
+      {
         date: "2026-11-18",
         time: "12:00 ~ 14:00",
         content: "5주차: 학업·진로 고민 공유 및 향후 학습계획 정리",
@@ -476,12 +482,6 @@
         time: "12:00 ~ 14:00",
         content: "6주차: 수업 필기·복습 방법 재점검 및 과목별 취약 부분 보완",
         type: "학습"
-      },
-      {
-        date: "2026-12-02",
-        time: "12:00 ~ 14:00",
-        content: "7주차: 기말고사 대비 과목별 학습계획 수립 및 우선순위 점검",
-        type: "학습"
       }
     ];
 
@@ -489,7 +489,7 @@
     //  캘린더 표시 범위 (필요시 수정)
     // ============================================================
     const RANGE_START = "2026-10-07";
-    const RANGE_END = "2026-12-02";
+    const RANGE_END = "2026-11-25";
 
     // ── 공지사항 렌더링 ──
     const noticeArea = document.getElementById('notice-area');
@@ -651,7 +651,6 @@
     const container = document.getElementById('calendars');
     container.appendChild(buildMonth(2026, 10));
     container.appendChild(buildMonth(2026, 11));
-    container.appendChild(buildMonth(2026, 12));
   </script>
 </body>
 
